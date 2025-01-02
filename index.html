@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funny Responsive Website</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #ff6f61;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ffcc00;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffdd33;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: #fff;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* Main Content */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+
+    .content .card {
+      background: #fff;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33.333% - 2rem);
+      text-align: center;
+    }
+
+    .content .card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .content .card p {
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content .card {
+        flex: 1 1 calc(50% - 2rem);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content .card {
+        flex: 1 1 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to the Funny Zone!</h1>
+    <p>Where laughter is mandatory and boredom is banned!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Jokes</a>
+    <a href="#">Memes</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Why did the website cross the road?</h2>
+      <p>To make you laugh!</p>
+    </div>
+  </section>
+
+      <!-- Main Content -->
+    <section class="content">
+      <div class="card">
+        <h3>Joke 1</h3>
+        <p>Why don’t programmers like nature?<br>It has too many bugs!</p>
+      </div>
+      <div class="card">
+        <h3>Joke 2</h3>
+        <p>Why did the scarecrow win an award?<br>Because he was outstanding in his field!</p>
+      </div>
+      <div class="card">
+        <h3>Joke 3</h3>
+        <p>Why don’t skeletons fight each other?<br>They don’t have the guts!</p>
+      </div>
+      <div class="card">
+        <h3>Joke 4</h3>
+        <p>Why did the tomato turn red?<br>Because it saw the salad dressing!</p>
+      </div>
+      <div class="card">
+        <h3>Joke 5</h3>
+        <p>Why don’t eggs tell jokes?<br>They’d crack each other up!</p>
+      </div>
+      <div class="card">
+        <h3>Joke 6</h3>
+        <p>Why did the computer go to the doctor?<br>It had a virus!</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with ❤️ and 😂 by the Funny Team</p>
+      <p>Disclaimer: No jokes were harmed in the making of this website.</p>
+    </footer>
+  </body>
+</html>
